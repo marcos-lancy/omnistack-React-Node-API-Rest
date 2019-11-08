@@ -1,2 +1,2 @@
-# omnistack-React-Node-API-Rest
+# Omnistack React + NodeJS API REST
  Projeto em React
