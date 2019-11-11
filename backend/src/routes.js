@@ -13,8 +13,11 @@ const upload = multer(uploadConfig);
 // req.body = Acessar corpo da requisição (criação e ou edição)
 routes.post('/sessions', sessionController.store);
 
+routes.get('/spots', SpotController.index);
+
 //Como terceiro parametro, pasando o upload/multer
 routes.post('/spots', upload.single('thumbnail') ,SpotController.store);
+
 
 module.exports = routes;
 
